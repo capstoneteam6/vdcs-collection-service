@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: ""
+        TaskDefinition: "arn:aws:ecs:us-east-1:813048754227:task-definition/vdcs-collection-service-task:5"
         LoadBalancerInfo:
-          ContainerName: "aws-hello-world-rest-api"
-          ContainerPort: "80"
+          ContainerName: "vdcs-collection-service-container"
+          ContainerPort: "7100"
         PlatformVersion: "LATEST"
